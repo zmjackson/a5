@@ -1,23 +1,51 @@
-@import '~purecss/build/pure.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
-    background-color: #ddd;
-    margin-top: 20px;
-}
-.container {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-header {
-    display: flex;
-    align-items: center;
-    img {
-        width: 60px;
-        margin-right: 30px;
-    }
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
-button {
-    margin-right: 15px;
+.app-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.messages-area {}
+
+.input-area {
+}
+
+.suggestion {
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 1rem;
+    width: fit-content;
+    border: 2px solid;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+
+.understand {
+    background-color: #CCFFED;
+    border-color: #00EFA7;
+}
+
+.understand:hover {
+    background-color: #67FFC8;
+}
+
+.confused {
+    background-color: #F4E5FF;
+    border-color: #DFABFF;
+}
+
+.confused:hover {
+    background-color: #E8CAFF;
+}
+
+label {
+    font-size: 30px;
+    font-weight: 700;
 }
