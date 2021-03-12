@@ -9,9 +9,13 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.messages-area {}
-
 .input-area {
+    margin-left: 5rem;
+    margin-top: 8rem;
+}
+
+.response-options {
+    padding-left: 0rem;
 }
 
 .suggestion {
@@ -23,7 +27,7 @@
     font-size: 20px;
     cursor: pointer;
     user-select: none;
-    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;    
 }
 
 
@@ -49,3 +53,51 @@ label {
     font-size: 30px;
     font-weight: 700;
 }
+
+.chat-area {
+    margin-left: 10rem;
+}
+
+.chat-name {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.messages {
+    height: 30rem;
+    overflow-y: scroll;
+    overflow-x: wrap;
+}
+
+.mine-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.theirs-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.message {
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.mine {
+    background-color: blue;
+}
+
+.theirs {
+    background-color: orange;
+}
+
+footer {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
